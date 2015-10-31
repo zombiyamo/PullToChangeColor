@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B1B1884A1BE460EF00B78021"
-               BuildableName = "GradationPullToRefresh.app"
-               BlueprintName = "GradationPullToRefresh"
-               ReferencedContainer = "container:GradationPullToRefresh.xcodeproj">
+               BuildableName = "PullToChangeColor.app"
+               BlueprintName = "PullToChangeColor"
+               ReferencedContainer = "container:PullToChangeColor.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,34 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B1B1885E1BE460EF00B78021"
-               BuildableName = "GradationPullToRefreshTests.xctest"
-               BlueprintName = "GradationPullToRefreshTests"
-               ReferencedContainer = "container:GradationPullToRefresh.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B1B188691BE460EF00B78021"
-               BuildableName = "GradationPullToRefreshUITests.xctest"
-               BlueprintName = "GradationPullToRefreshUITests"
-               ReferencedContainer = "container:GradationPullToRefresh.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B1B1884A1BE460EF00B78021"
-            BuildableName = "GradationPullToRefresh.app"
-            BlueprintName = "GradationPullToRefresh"
-            ReferencedContainer = "container:GradationPullToRefresh.xcodeproj">
+            BuildableName = "PullToChangeColor.app"
+            BlueprintName = "PullToChangeColor"
+            ReferencedContainer = "container:PullToChangeColor.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B1B1884A1BE460EF00B78021"
-            BuildableName = "GradationPullToRefresh.app"
-            BlueprintName = "GradationPullToRefresh"
-            ReferencedContainer = "container:GradationPullToRefresh.xcodeproj">
+            BuildableName = "PullToChangeColor.app"
+            BlueprintName = "PullToChangeColor"
+            ReferencedContainer = "container:PullToChangeColor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B1B1884A1BE460EF00B78021"
-            BuildableName = "GradationPullToRefresh.app"
-            BlueprintName = "GradationPullToRefresh"
-            ReferencedContainer = "container:GradationPullToRefresh.xcodeproj">
+            BuildableName = "PullToChangeColor.app"
+            BlueprintName = "PullToChangeColor"
+            ReferencedContainer = "container:PullToChangeColor.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

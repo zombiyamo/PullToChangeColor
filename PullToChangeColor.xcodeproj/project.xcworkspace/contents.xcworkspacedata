@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:GradationPullToRefresh.xcodeproj">
+      location = "self:/Users/miyamo/world/GradationPullToRefresh/PullToChangeColor.xcodeproj">
    </FileRef>
 </Workspace>

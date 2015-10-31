@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		B1B1884F1BE460EF00B78021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1884E1BE460EF00B78021 /* AppDelegate.swift */; };
-		B1B188511BE460EF00B78021 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B188501BE460EF00B78021 /* ViewController.swift */; };
-		B1B188541BE460EF00B78021 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B188521BE460EF00B78021 /* Main.storyboard */; };
+		B1B188511BE460EF00B78021 /* PullToChangeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B188501BE460EF00B78021 /* PullToChangeColor.swift */; };
 		B1B188561BE460EF00B78021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B188551BE460EF00B78021 /* Assets.xcassets */; };
 		B1B188591BE460EF00B78021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B188571BE460EF00B78021 /* LaunchScreen.storyboard */; };
 		B1B188641BE460EF00B78021 /* GradationPullToRefreshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B188631BE460EF00B78021 /* GradationPullToRefreshTests.swift */; };
 		B1B1886F1BE460EF00B78021 /* GradationPullToRefreshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1886E1BE460EF00B78021 /* GradationPullToRefreshUITests.swift */; };
+		B1F7141F1BE4960A0001A60B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1F7141D1BE4960A0001A60B /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +34,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B1B1884B1BE460EF00B78021 /* GradationPullToRefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradationPullToRefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B1884B1BE460EF00B78021 /* PullToChangeColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PullToChangeColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B1884E1BE460EF00B78021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B1B188501BE460EF00B78021 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B1B188531BE460EF00B78021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1B188501BE460EF00B78021 /* PullToChangeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToChangeColor.swift; sourceTree = "<group>"; };
 		B1B188551BE460EF00B78021 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1B188581BE460EF00B78021 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1B1885A1BE460EF00B78021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1B1885F1BE460EF00B78021 /* GradationPullToRefreshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradationPullToRefreshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B1885F1BE460EF00B78021 /* PullToChangeColor.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PullToChangeColor.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B188631BE460EF00B78021 /* GradationPullToRefreshTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradationPullToRefreshTests.swift; sourceTree = "<group>"; };
 		B1B188651BE460EF00B78021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B1B1886A1BE460EF00B78021 /* GradationPullToRefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradationPullToRefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B1886A1BE460EF00B78021 /* PullToChangeColor.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PullToChangeColor.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B1886E1BE460EF00B78021 /* GradationPullToRefreshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradationPullToRefreshUITests.swift; sourceTree = "<group>"; };
 		B1B188701BE460EF00B78021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1F7141E1BE4960A0001A60B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +87,9 @@
 		B1B1884C1BE460EF00B78021 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B1B1884B1BE460EF00B78021 /* GradationPullToRefresh.app */,
-				B1B1885F1BE460EF00B78021 /* GradationPullToRefreshTests.xctest */,
-				B1B1886A1BE460EF00B78021 /* GradationPullToRefreshUITests.xctest */,
+				B1B1884B1BE460EF00B78021 /* PullToChangeColor.app */,
+				B1B1885F1BE460EF00B78021 /* PullToChangeColor.xctest */,
+				B1B1886A1BE460EF00B78021 /* PullToChangeColor.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				B1B1884E1BE460EF00B78021 /* AppDelegate.swift */,
-				B1B188501BE460EF00B78021 /* ViewController.swift */,
-				B1B188521BE460EF00B78021 /* Main.storyboard */,
+				B1B188501BE460EF00B78021 /* PullToChangeColor.swift */,
+				B1F7141D1BE4960A0001A60B /* Main.storyboard */,
 				B1B188551BE460EF00B78021 /* Assets.xcassets */,
 				B1B188571BE460EF00B78021 /* LaunchScreen.storyboard */,
 				B1B1885A1BE460EF00B78021 /* Info.plist */,
@@ -128,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B1B1884A1BE460EF00B78021 /* GradationPullToRefresh */ = {
+		B1B1884A1BE460EF00B78021 /* PullToChangeColor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B1B188731BE460F000B78021 /* Build configuration list for PBXNativeTarget "GradationPullToRefresh" */;
+			buildConfigurationList = B1B188731BE460F000B78021 /* Build configuration list for PBXNativeTarget "PullToChangeColor" */;
 			buildPhases = (
 				B1B188471BE460EF00B78021 /* Sources */,
 				B1B188481BE460EF00B78021 /* Frameworks */,
@@ -140,14 +140,14 @@
 			);
 			dependencies = (
 			);
-			name = GradationPullToRefresh;
+			name = PullToChangeColor;
 			productName = GradationPullToRefresh;
-			productReference = B1B1884B1BE460EF00B78021 /* GradationPullToRefresh.app */;
+			productReference = B1B1884B1BE460EF00B78021 /* PullToChangeColor.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B1B1885E1BE460EF00B78021 /* GradationPullToRefreshTests */ = {
+		B1B1885E1BE460EF00B78021 /* PullToChangeColorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B1B188761BE460F000B78021 /* Build configuration list for PBXNativeTarget "GradationPullToRefreshTests" */;
+			buildConfigurationList = B1B188761BE460F000B78021 /* Build configuration list for PBXNativeTarget "PullToChangeColorTests" */;
 			buildPhases = (
 				B1B1885B1BE460EF00B78021 /* Sources */,
 				B1B1885C1BE460EF00B78021 /* Frameworks */,
@@ -158,14 +158,14 @@
 			dependencies = (
 				B1B188611BE460EF00B78021 /* PBXTargetDependency */,
 			);
-			name = GradationPullToRefreshTests;
+			name = PullToChangeColorTests;
 			productName = GradationPullToRefreshTests;
-			productReference = B1B1885F1BE460EF00B78021 /* GradationPullToRefreshTests.xctest */;
+			productReference = B1B1885F1BE460EF00B78021 /* PullToChangeColor.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B1B188691BE460EF00B78021 /* GradationPullToRefreshUITests */ = {
+		B1B188691BE460EF00B78021 /* PullToChangeColorUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B1B188791BE460F000B78021 /* Build configuration list for PBXNativeTarget "GradationPullToRefreshUITests" */;
+			buildConfigurationList = B1B188791BE460F000B78021 /* Build configuration list for PBXNativeTarget "PullToChangeColorUITests" */;
 			buildPhases = (
 				B1B188661BE460EF00B78021 /* Sources */,
 				B1B188671BE460EF00B78021 /* Frameworks */,
@@ -176,9 +176,9 @@
 			dependencies = (
 				B1B1886C1BE460EF00B78021 /* PBXTargetDependency */,
 			);
-			name = GradationPullToRefreshUITests;
+			name = PullToChangeColorUITests;
 			productName = GradationPullToRefreshUITests;
-			productReference = B1B1886A1BE460EF00B78021 /* GradationPullToRefreshUITests.xctest */;
+			productReference = B1B1886A1BE460EF00B78021 /* PullToChangeColor.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B1B188461BE460EF00B78021 /* Build configuration list for PBXProject "GradationPullToRefresh" */;
+			buildConfigurationList = B1B188461BE460EF00B78021 /* Build configuration list for PBXProject "PullToChangeColor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -217,9 +217,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B1B1884A1BE460EF00B78021 /* GradationPullToRefresh */,
-				B1B1885E1BE460EF00B78021 /* GradationPullToRefreshTests */,
-				B1B188691BE460EF00B78021 /* GradationPullToRefreshUITests */,
+				B1B1884A1BE460EF00B78021 /* PullToChangeColor */,
+				B1B1885E1BE460EF00B78021 /* PullToChangeColorTests */,
+				B1B188691BE460EF00B78021 /* PullToChangeColorUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,9 +229,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1F7141F1BE4960A0001A60B /* Main.storyboard in Resources */,
 				B1B188591BE460EF00B78021 /* LaunchScreen.storyboard in Resources */,
 				B1B188561BE460EF00B78021 /* Assets.xcassets in Resources */,
-				B1B188541BE460EF00B78021 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1B188511BE460EF00B78021 /* ViewController.swift in Sources */,
+				B1B188511BE460EF00B78021 /* PullToChangeColor.swift in Sources */,
 				B1B1884F1BE460EF00B78021 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,31 +282,31 @@
 /* Begin PBXTargetDependency section */
 		B1B188611BE460EF00B78021 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B1B1884A1BE460EF00B78021 /* GradationPullToRefresh */;
+			target = B1B1884A1BE460EF00B78021 /* PullToChangeColor */;
 			targetProxy = B1B188601BE460EF00B78021 /* PBXContainerItemProxy */;
 		};
 		B1B1886C1BE460EF00B78021 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B1B1884A1BE460EF00B78021 /* GradationPullToRefresh */;
+			target = B1B1884A1BE460EF00B78021 /* PullToChangeColor */;
 			targetProxy = B1B1886B1BE460EF00B78021 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B1B188521BE460EF00B78021 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B1B188531BE460EF00B78021 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B1B188571BE460EF00B78021 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B1B188581BE460EF00B78021 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B1F7141D1BE4960A0001A60B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1F7141E1BE4960A0001A60B /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -400,7 +400,7 @@
 				INFOPLIST_FILE = GradationPullToRefresh/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Miyamo.GradationPullToRefresh;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PullToChangeColor;
 			};
 			name = Debug;
 		};
@@ -411,7 +411,7 @@
 				INFOPLIST_FILE = GradationPullToRefresh/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Miyamo.GradationPullToRefresh;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PullToChangeColor;
 			};
 			name = Release;
 		};
@@ -422,8 +422,8 @@
 				INFOPLIST_FILE = GradationPullToRefreshTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Miyamo.GradationPullToRefreshTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GradationPullToRefresh.app/GradationPullToRefresh";
+				PRODUCT_NAME = PullToChangeColor;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PullToChangeColor.app/PullToChangeColor";
 			};
 			name = Debug;
 		};
@@ -434,8 +434,8 @@
 				INFOPLIST_FILE = GradationPullToRefreshTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Miyamo.GradationPullToRefreshTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GradationPullToRefresh.app/GradationPullToRefresh";
+				PRODUCT_NAME = PullToChangeColor;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PullToChangeColor.app/PullToChangeColor";
 			};
 			name = Release;
 		};
@@ -445,7 +445,7 @@
 				INFOPLIST_FILE = GradationPullToRefreshUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Miyamo.GradationPullToRefreshUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PullToChangeColor;
 				TEST_TARGET_NAME = GradationPullToRefresh;
 				USES_XCTRUNNER = YES;
 			};
@@ -457,7 +457,7 @@
 				INFOPLIST_FILE = GradationPullToRefreshUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Miyamo.GradationPullToRefreshUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PullToChangeColor;
 				TEST_TARGET_NAME = GradationPullToRefresh;
 				USES_XCTRUNNER = YES;
 			};
@@ -466,7 +466,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B1B188461BE460EF00B78021 /* Build configuration list for PBXProject "GradationPullToRefresh" */ = {
+		B1B188461BE460EF00B78021 /* Build configuration list for PBXProject "PullToChangeColor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B1B188711BE460F000B78021 /* Debug */,
@@ -475,29 +475,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B1B188731BE460F000B78021 /* Build configuration list for PBXNativeTarget "GradationPullToRefresh" */ = {
+		B1B188731BE460F000B78021 /* Build configuration list for PBXNativeTarget "PullToChangeColor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B1B188741BE460F000B78021 /* Debug */,
 				B1B188751BE460F000B78021 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B1B188761BE460F000B78021 /* Build configuration list for PBXNativeTarget "GradationPullToRefreshTests" */ = {
+		B1B188761BE460F000B78021 /* Build configuration list for PBXNativeTarget "PullToChangeColorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B1B188771BE460F000B78021 /* Debug */,
 				B1B188781BE460F000B78021 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		B1B188791BE460F000B78021 /* Build configuration list for PBXNativeTarget "GradationPullToRefreshUITests" */ = {
+		B1B188791BE460F000B78021 /* Build configuration list for PBXNativeTarget "PullToChangeColorUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B1B1887A1BE460F000B78021 /* Debug */,
 				B1B1887B1BE460F000B78021 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

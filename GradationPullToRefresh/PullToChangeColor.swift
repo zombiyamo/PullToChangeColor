@@ -1,6 +1,6 @@
 //
-//  ViewController.swift
-//  GradationPullToRefresh
+//  PullToChangeColor.swift
+//  PullToChangeColor
 //
 //  Created by miyamo on 2015/10/31.
 //  Copyright © 2015年 miyamoto haruna. All rights reserved.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class PullToChangeColor: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var tblDemo: UITableView!
     var labelsArray: Array<UILabel> = []
     
@@ -20,8 +20,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     var timer: NSTimer!
     var gradationTimer: NSTimer!
     var cnt: Int = 0
-    var gradationCount: CGFloat = 1.0
     var colorcnt: Int!
+    var changeColorInterval: Double  = 0.5
     
     
     
@@ -52,6 +52,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         //refreshControll.backgroundColor = UIColor.greenColor()
         refreshControll.backgroundColor = getColor()
         refreshControll.tintColor = UIColor.whiteColor()
+        
     }
     
     func getColor() -> UIColor {
@@ -87,14 +88,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func refreshControllTimer() {
         timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "endOfWork", userInfo: nil, repeats: true)
-        gradationTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "gradation", userInfo: nil, repeats: true)
-      
-        if cnt < colorcnt {
-            cnt += 1
-        }else {
-            cnt = 0
-        }
-    
+        gradationTimer = NSTimer.scheduledTimerWithTimeInterval(changeColorInterval, target: self, selector: "gradation", userInfo: nil, repeats: true)
     }
     
     func endOfWork() {
@@ -103,14 +97,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         if timer.valid {
         timer.invalidate()
         gradationTimer.invalidate()
-        gradationCount = 1.0
         }
     }
     
     func gradation() {
 
         UIView.animateWithDuration(
-            1.0,
+            changeColorInterval,
             animations:{ () -> Void in
                 self.refreshControll.backgroundColor = self.getColor()
             }
