@@ -14,6 +14,7 @@
 		B1B188591BE460EF00B78021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B188571BE460EF00B78021 /* LaunchScreen.storyboard */; };
 		B1B188641BE460EF00B78021 /* GradationPullToRefreshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B188631BE460EF00B78021 /* GradationPullToRefreshTests.swift */; };
 		B1B1886F1BE460EF00B78021 /* GradationPullToRefreshUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1886E1BE460EF00B78021 /* GradationPullToRefreshUITests.swift */; };
+		B1B1887D1BE468A400B78021 /* RefreshContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B1887C1BE468A400B78021 /* RefreshContents.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B1B1886A1BE460EF00B78021 /* GradationPullToRefreshUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradationPullToRefreshUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B1886E1BE460EF00B78021 /* GradationPullToRefreshUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradationPullToRefreshUITests.swift; sourceTree = "<group>"; };
 		B1B188701BE460EF00B78021 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1B1887C1BE468A400B78021 /* RefreshContents.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshContents.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				B1B188501BE460EF00B78021 /* ViewController.swift */,
 				B1B188521BE460EF00B78021 /* Main.storyboard */,
 				B1B188551BE460EF00B78021 /* Assets.xcassets */,
+				B1B1887C1BE468A400B78021 /* RefreshContents.xib */,
 				B1B188571BE460EF00B78021 /* LaunchScreen.storyboard */,
 				B1B1885A1BE460EF00B78021 /* Info.plist */,
 			);
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1B188591BE460EF00B78021 /* LaunchScreen.storyboard in Resources */,
+				B1B1887D1BE468A400B78021 /* RefreshContents.xib in Resources */,
 				B1B188561BE460EF00B78021 /* Assets.xcassets in Resources */,
 				B1B188541BE460EF00B78021 /* Main.storyboard in Resources */,
 			);
