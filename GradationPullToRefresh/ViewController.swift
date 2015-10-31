@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var tblDemo: UITableView!
-    var customView: UIView!
     var labelsArray: Array<UILabel> = []
     
     var dataArray: Array<String> = ["A","B","C","D"]
+    var colorArray = [UIColor]()
     var refreshControll: UIRefreshControl!
+    
+    var isAnimating = false
+    var timer: NSTimer!
+    var gradationTimer: NSTimer!
+    var cnt: Int = 0
+    var gradationCount: CGFloat = 1.0
+    var colorcnt: Int!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,29 +40,83 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         tblDemo.dataSource = self
         
         refreshControll = UIRefreshControl()
-        refreshControll.backgroundColor = UIColor.greenColor()
-        refreshControll.tintColor = UIColor.whiteColor()
-        
+        refreshControllOptions()
         tblDemo.addSubview(refreshControll)
+        
         self.view.addSubview(tblDemo)
-        
-        loadCustomRefreshContents()
+       
     }
     
-    func loadCustomRefreshContents(){
-        let refreshContents = NSBundle.mainBundle().loadNibNamed("RefreshContents", owner: self, options: nil)
-        customView = refreshContents[0] as! UIView
-        customView.frame = refreshControll.bounds
-        refreshControll.addSubview(customView)
+    func refreshControllOptions(){
+        
+        //refreshControll.backgroundColor = UIColor.greenColor()
+        refreshControll.backgroundColor = getColor()
+        refreshControll.tintColor = UIColor.whiteColor()
     }
     
-    func pullToRefreshGradationColor(){
+    func getColor() -> UIColor {
+        colorArray = [UIColor.redColor(),UIColor.orangeColor(),UIColor.greenColor(),UIColor.purpleColor()]
+        colorcnt = colorArray.count - 1
+        if cnt < colorcnt {
+            cnt += 1
+        }else {
+            cnt = 0
+        }
         
-    
+        return colorArray[cnt]
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
+    }
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        if refreshControll.refreshing{
+            refreshControllTimer()
+        }
+    }
+    
+    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+        if !refreshControll.refreshing {
+            refreshControllOptions()
+        }
+    }
+    
+
+    
+    
+    func refreshControllTimer() {
+        timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "endOfWork", userInfo: nil, repeats: true)
+        gradationTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "gradation", userInfo: nil, repeats: true)
+      
+        if cnt < colorcnt {
+            cnt += 1
+        }else {
+            cnt = 0
+        }
+    
+    }
+    
+    func endOfWork() {
+        
+        refreshControll.endRefreshing()
+        if timer.valid {
+        timer.invalidate()
+        gradationTimer.invalidate()
+        gradationCount = 1.0
+        }
+    }
+    
+    func gradation() {
+
+        UIView.animateWithDuration(
+            1.0,
+            animations:{ () -> Void in
+                self.refreshControll.backgroundColor = self.getColor()
+            }
+        
+        )
+
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
