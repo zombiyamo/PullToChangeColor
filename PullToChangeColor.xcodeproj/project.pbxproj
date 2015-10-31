@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B14881581BE49DC800703605 /* RefreshContents.xib in Resources */ = {isa = PBXBuildFile; fileRef = B14881571BE49DC800703605 /* RefreshContents.xib */; };
+		B160F9361BE4A97E001FE1DF /* refreshicon.png in Resources */ = {isa = PBXBuildFile; fileRef = B160F9351BE4A97E001FE1DF /* refreshicon.png */; };
+		B160F9381BE4ACBD001FE1DF /* RefreshContents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B160F9371BE4ACBD001FE1DF /* RefreshContents.swift */; };
+		B198549E1BE4C6CD00C5FA60 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = B198549D1BE4C6CD00C5FA60 /* heart.png */; };
+		B19854A01BE4C88200C5FA60 /* heart2.png in Resources */ = {isa = PBXBuildFile; fileRef = B198549F1BE4C88200C5FA60 /* heart2.png */; };
 		B1B1884F1BE460EF00B78021 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B1884E1BE460EF00B78021 /* AppDelegate.swift */; };
 		B1B188511BE460EF00B78021 /* PullToChangeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1B188501BE460EF00B78021 /* PullToChangeColor.swift */; };
 		B1B188561BE460EF00B78021 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B188551BE460EF00B78021 /* Assets.xcassets */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B14881571BE49DC800703605 /* RefreshContents.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RefreshContents.xib; sourceTree = "<group>"; };
+		B160F9351BE4A97E001FE1DF /* refreshicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refreshicon.png; sourceTree = "<group>"; };
+		B160F9371BE4ACBD001FE1DF /* RefreshContents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshContents.swift; sourceTree = "<group>"; };
+		B198549D1BE4C6CD00C5FA60 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		B198549F1BE4C88200C5FA60 /* heart2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart2.png; sourceTree = "<group>"; };
 		B1B1884B1BE460EF00B78021 /* PullToChangeColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PullToChangeColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1B1884E1BE460EF00B78021 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1B188501BE460EF00B78021 /* PullToChangeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToChangeColor.swift; sourceTree = "<group>"; };
@@ -77,7 +87,7 @@
 		B1B188421BE460EF00B78021 = {
 			isa = PBXGroup;
 			children = (
-				B1B1884D1BE460EF00B78021 /* GradationPullToRefresh */,
+				B1B1884D1BE460EF00B78021 /* PullToChangeColor */,
 				B1B188621BE460EF00B78021 /* GradationPullToRefreshTests */,
 				B1B1886D1BE460EF00B78021 /* GradationPullToRefreshUITests */,
 				B1B1884C1BE460EF00B78021 /* Products */,
@@ -94,16 +104,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B1B1884D1BE460EF00B78021 /* GradationPullToRefresh */ = {
+		B1B1884D1BE460EF00B78021 /* PullToChangeColor */ = {
 			isa = PBXGroup;
 			children = (
 				B1B1884E1BE460EF00B78021 /* AppDelegate.swift */,
 				B1B188501BE460EF00B78021 /* PullToChangeColor.swift */,
 				B1F7141D1BE4960A0001A60B /* Main.storyboard */,
+				B160F9371BE4ACBD001FE1DF /* RefreshContents.swift */,
+				B198549D1BE4C6CD00C5FA60 /* heart.png */,
+				B198549F1BE4C88200C5FA60 /* heart2.png */,
+				B14881571BE49DC800703605 /* RefreshContents.xib */,
+				B160F9351BE4A97E001FE1DF /* refreshicon.png */,
 				B1B188551BE460EF00B78021 /* Assets.xcassets */,
 				B1B188571BE460EF00B78021 /* LaunchScreen.storyboard */,
 				B1B1885A1BE460EF00B78021 /* Info.plist */,
 			);
+			name = PullToChangeColor;
 			path = GradationPullToRefresh;
 			sourceTree = "<group>";
 		};
@@ -230,8 +246,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1F7141F1BE4960A0001A60B /* Main.storyboard in Resources */,
+				B14881581BE49DC800703605 /* RefreshContents.xib in Resources */,
+				B160F9361BE4A97E001FE1DF /* refreshicon.png in Resources */,
 				B1B188591BE460EF00B78021 /* LaunchScreen.storyboard in Resources */,
+				B198549E1BE4C6CD00C5FA60 /* heart.png in Resources */,
 				B1B188561BE460EF00B78021 /* Assets.xcassets in Resources */,
+				B19854A01BE4C88200C5FA60 /* heart2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1B188511BE460EF00B78021 /* PullToChangeColor.swift in Sources */,
+				B160F9381BE4ACBD001FE1DF /* RefreshContents.swift in Sources */,
 				B1B1884F1BE460EF00B78021 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

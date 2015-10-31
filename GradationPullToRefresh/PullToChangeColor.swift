@@ -10,11 +10,11 @@ import UIKit
 
 class PullToChangeColor: UIViewController,UITableViewDelegate,UITableViewDataSource {
     var tblDemo: UITableView!
-    var labelsArray: Array<UILabel> = []
+    var customView: UIView!
+    var refreshImageView: UIImageView!
     
     var dataArray: Array<String> = ["A","B","C","D"]
-    var colorArray = [UIColor]()
-    var refreshControll: UIRefreshControl!
+    var refreshControl: UIRefreshControl!
     
     var isAnimating = false
     var timer: NSTimer!
@@ -22,7 +22,10 @@ class PullToChangeColor: UIViewController,UITableViewDelegate,UITableViewDataSou
     var cnt: Int = 0
     var colorcnt: Int!
     var changeColorInterval: Double  = 0.5
+    var endOfWorkInterval: Double  = 2.0
+    var currentColorIndex = 0
     
+    var currentLabelIndex = 0
     
     
     override func viewDidLoad() {
@@ -32,39 +35,41 @@ class PullToChangeColor: UIViewController,UITableViewDelegate,UITableViewDataSou
         
         let displayWidth: CGFloat = self.view.frame.width
         let displayHeight: CGFloat = self.view.frame.height
-        
         tblDemo = UITableView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: displayHeight - barHeight))
         tblDemo.registerClass(UITableViewCell.self, forCellReuseIdentifier: "idCell")
         
         tblDemo.delegate = self
         tblDemo.dataSource = self
-        
-        refreshControll = UIRefreshControl()
-        refreshControllOptions()
-        tblDemo.addSubview(refreshControll)
+        refreshControl = UIRefreshControl()
+        tblDemo.addSubview(refreshControl)
         
         self.view.addSubview(tblDemo)
-       
+        loadCustomRefreshContents()
+        colorOptions()
     }
     
-    func refreshControllOptions(){
+    func colorOptions(){
         
-        //refreshControll.backgroundColor = UIColor.greenColor()
-        refreshControll.backgroundColor = getColor()
-        refreshControll.tintColor = UIColor.whiteColor()
+        
+        refreshControl.backgroundColor = getColor()
+        refreshControl.tintColor = UIColor.clearColor()
+        customView.backgroundColor = getColor()
+        customView.tintColor = UIColor.clearColor()
+        changeColorInterval = 0.5
+        endOfWorkInterval = 2.0
         
     }
     
     func getColor() -> UIColor {
-        colorArray = [UIColor.redColor(),UIColor.orangeColor(),UIColor.greenColor(),UIColor.purpleColor()]
-        colorcnt = colorArray.count - 1
+        let customColorArray = [UIColor.redColor(),UIColor.cyanColor(),UIColor.orangeColor(),UIColor.greenColor(),UIColor.purpleColor(),UIColor.blueColor()]
+        colorcnt = customColorArray.count - 1
         if cnt < colorcnt {
             cnt += 1
         }else {
             cnt = 0
         }
         
-        return colorArray[cnt]
+        return customColorArray[cnt]
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -72,28 +77,29 @@ class PullToChangeColor: UIViewController,UITableViewDelegate,UITableViewDataSou
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        if refreshControll.refreshing{
-            refreshControllTimer()
+        
+        if refreshControl.refreshing{
+            refreshControlTimer()
         }
     }
-    
-    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
-        if !refreshControll.refreshing {
-            refreshControllOptions()
-        }
-    }
-    
 
+    func loadCustomRefreshContents() {
+        let refreshContents = NSBundle.mainBundle().loadNibNamed("RefreshContents", owner: self, options: nil)
+        customView = refreshContents[0] as! UIView
+        customView.frame = refreshControl.bounds
+        refreshControl.addSubview(customView)
+    }
     
     
-    func refreshControllTimer() {
-        timer = NSTimer.scheduledTimerWithTimeInterval(2.0, target: self, selector: "endOfWork", userInfo: nil, repeats: true)
+    
+    func refreshControlTimer() {
+        timer = NSTimer.scheduledTimerWithTimeInterval(endOfWorkInterval, target: self, selector: "endOfWork", userInfo: nil, repeats: true)
         gradationTimer = NSTimer.scheduledTimerWithTimeInterval(changeColorInterval, target: self, selector: "gradation", userInfo: nil, repeats: true)
     }
     
     func endOfWork() {
         
-        refreshControll.endRefreshing()
+        refreshControl.endRefreshing()
         if timer.valid {
         timer.invalidate()
         gradationTimer.invalidate()
@@ -101,11 +107,11 @@ class PullToChangeColor: UIViewController,UITableViewDelegate,UITableViewDataSou
     }
     
     func gradation() {
-
+        
         UIView.animateWithDuration(
             changeColorInterval,
             animations:{ () -> Void in
-                self.refreshControll.backgroundColor = self.getColor()
+                self.customView.backgroundColor = self.getColor()
             }
         
         )
